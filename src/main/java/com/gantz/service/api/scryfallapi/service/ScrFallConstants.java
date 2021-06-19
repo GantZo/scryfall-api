@@ -23,4 +23,12 @@ public class ScrFallConstants {
         public final static String ABILITY_WORDS = "/catalog/ability-words";
     }
 
+    public static class RulingApi {
+        public final static String BY_MUILTIVERSE_ID = "/cards/multiverse/{id}/rulings";
+        public final static String BY_MTGO_ID = "/cards/mtgo/{id}/rulings";
+        public final static String BY_ARENA_ID = "/cards/arena/{id}/rulings";
+        public final static String BY_CODE_NUMBER = "/cards/{code}/{number}/rulings";
+        public final static String BY_ID = "/cards/{id}/rulings";
+    }
+
 }
