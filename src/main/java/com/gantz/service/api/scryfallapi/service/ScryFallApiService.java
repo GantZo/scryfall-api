@@ -1,7 +1,7 @@
 package com.gantz.service.api.scryfallapi.service;
 
 import org.springframework.boot.web.client.RestTemplateBuilder;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -16,7 +16,15 @@ public class ScryFallApiService {
     }
 
     public <T> ResponseEntity<T> get(String uri, Class<T> responseClass) {
-        return restTemplate.getForEntity(ScrFallConstants.API_URI +  uri, responseClass);
+        return restTemplate.getForEntity(ScrFallConstants.API_URI + uri, responseClass);
+    }
+
+    public <T> ResponseEntity<T> get(String uri, Class<T> responseClass, Object... variables) {
+        HttpHeaders headers = new HttpHeaders();
+        headers.set(HttpHeaders.ACCEPT, MediaType.APPLICATION_JSON_VALUE);
+        HttpEntity entity = new HttpEntity(headers);
+
+        return restTemplate.exchange(ScrFallConstants.API_URI + uri, HttpMethod.GET, entity, responseClass, variables);
     }
 
 }
