@@ -38,4 +38,9 @@ public class ScryFallConstants {
         public final static String BY_ID = "/sets/{id}";
     }
 
+    public static class CardSymbolApi {
+        public final static String SYMBOLS = "/symbology";
+        public final static String PARSE_MANA = "/symbology/parse-mana?cost={cost}";
+    }
+
 }

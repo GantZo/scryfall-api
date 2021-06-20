@@ -36,7 +36,7 @@ public class CardSymbol {
     @JsonProperty("colors")
     private List<Color> colors;
     @JsonProperty("gatherer_alternates")
-    private String gathererAlternates;
+    private List<String> gathererAlternates;
     @JsonProperty("svg_uri")
     private URI svgUri;
 
