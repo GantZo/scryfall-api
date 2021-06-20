@@ -6,8 +6,6 @@ import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-@Service
-@Primary
 public class ScryFallApiServiceImpl implements ScryFallApiService {
 
     private final RestTemplate restTemplate;
