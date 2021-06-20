@@ -17,19 +17,19 @@ public class SetServiceImpl {
     }
 
     public SetListResponse getList() {
-        return apiService.get(SETS, SetListResponse.class).getBody();
+        return apiService.get(SETS, SetListResponse.class);
     }
 
     public ScryFallSet getByCode(String code) {
-        return apiService.get(BY_CODE, ScryFallSet.class, code).getBody();
+        return apiService.get(BY_CODE, ScryFallSet.class, code);
     }
 
     public ScryFallSet getByTcgplayerId(Integer id) {
-        return apiService.get(BY_TCGPLAYER_ID, ScryFallSet.class, id).getBody();
+        return apiService.get(BY_TCGPLAYER_ID, ScryFallSet.class, id);
     }
 
     public ScryFallSet getById(String id) {
-        return apiService.get(BY_ID, ScryFallSet.class, id).getBody();
+        return apiService.get(BY_ID, ScryFallSet.class, id);
     }
 
 }

@@ -18,17 +18,17 @@ public class ScryFallApiServiceImpl implements ScryFallApiService {
     }
 
     @Override
-    public <T> ResponseEntity<T> get(String uri, Class<T> responseClass) {
-        return restTemplate.getForEntity(ScryFallConstants.API_URI + uri, responseClass);
+    public <T> T get(String uri, Class<T> responseClass) {
+        return restTemplate.getForEntity(ScryFallConstants.API_URI + uri, responseClass).getBody();
     }
 
     @Override
-    public <T> ResponseEntity<T> get(String uri, Class<T> responseClass, Object... variables) {
+    public <T> T get(String uri, Class<T> responseClass, Object... variables) {
         HttpHeaders headers = new HttpHeaders();
         headers.set(HttpHeaders.ACCEPT, MediaType.APPLICATION_JSON_VALUE);
         HttpEntity entity = new HttpEntity(headers);
 
-        return restTemplate.exchange(ScryFallConstants.API_URI + uri, HttpMethod.GET, entity, responseClass, variables);
+        return restTemplate.exchange(ScryFallConstants.API_URI + uri, HttpMethod.GET, entity, responseClass, variables).getBody();
     }
 
 }

@@ -16,23 +16,23 @@ public class RulingServiceImpl {
     }
 
     public RulingResponse getByMultiverseId(Integer id) {
-        return scryFallApiService.get(BY_MUILTIVERSE_ID, RulingResponse.class, id).getBody();
+        return scryFallApiService.get(BY_MUILTIVERSE_ID, RulingResponse.class, id);
     }
 
     public RulingResponse getByMtgoId(Integer id) {
-        return scryFallApiService.get(BY_MTGO_ID, RulingResponse.class, id).getBody();
+        return scryFallApiService.get(BY_MTGO_ID, RulingResponse.class, id);
     }
 
     public RulingResponse getByArenaId(Integer id) {
-        return scryFallApiService.get(BY_ARENA_ID, RulingResponse.class, id).getBody();
+        return scryFallApiService.get(BY_ARENA_ID, RulingResponse.class, id);
     }
 
     public RulingResponse getByCodeNumber(String code, Object number) {
-        return scryFallApiService.get(BY_CODE_NUMBER, RulingResponse.class, code, number).getBody();
+        return scryFallApiService.get(BY_CODE_NUMBER, RulingResponse.class, code, number);
     }
 
     public RulingResponse getById(String id) {
-        return scryFallApiService.get(BY_ID, RulingResponse.class, id).getBody();
+        return scryFallApiService.get(BY_ID, RulingResponse.class, id);
     }
 
 }

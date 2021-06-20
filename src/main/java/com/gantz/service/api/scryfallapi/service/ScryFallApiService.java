@@ -4,8 +4,8 @@ import org.springframework.http.ResponseEntity;
 
 public interface ScryFallApiService {
 
-    <T> ResponseEntity<T> get(String uri, Class<T> responseClass);
+    <T> T get(String uri, Class<T> responseClass);
 
-    <T> ResponseEntity<T> get(String uri, Class<T> responseClass, Object... variables);
+    <T> T get(String uri, Class<T> responseClass, Object... variables);
 
 }

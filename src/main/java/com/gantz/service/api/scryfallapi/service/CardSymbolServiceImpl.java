@@ -17,11 +17,11 @@ public class CardSymbolServiceImpl {
     }
 
     public CardSymbolResponse getAll() {
-        return apiService.get(SYMBOLS, CardSymbolResponse.class).getBody();
+        return apiService.get(SYMBOLS, CardSymbolResponse.class);
     }
 
     public ManaCost parseCost(String cost) {
-        return apiService.get(PARSE_MANA, ManaCost.class, cost).getBody();
+        return apiService.get(PARSE_MANA, ManaCost.class, cost);
     }
 
 }

@@ -17,7 +17,7 @@ public class SetServiceTest {
 
     @Test
     public void getListTest() {
-        SetListResponse response = apiService.get(SETS, SetListResponse.class).getBody();
+        SetListResponse response = apiService.get(SETS, SetListResponse.class);
         Assert.assertNotNull(response);
         Assert.assertNotNull(response.data);
         Assert.assertNotEquals(response.data.size(), 0);
@@ -26,21 +26,21 @@ public class SetServiceTest {
 
     @Test
     public void getByCodeTest() {
-        ScryFallSet scryFallSet = apiService.get(BY_CODE, ScryFallSet.class, "mmq").getBody();
+        ScryFallSet scryFallSet = apiService.get(BY_CODE, ScryFallSet.class, "mmq");
         Assert.assertNotNull(scryFallSet);
         Assert.assertEquals(scryFallSet.getCode(), "mmq");
     }
 
     @Test
     public void getByTcgplayerIdTest() {
-        ScryFallSet scryFallSet = apiService.get(BY_TCGPLAYER_ID, ScryFallSet.class, 1909).getBody();
+        ScryFallSet scryFallSet = apiService.get(BY_TCGPLAYER_ID, ScryFallSet.class, 1909);
         Assert.assertNotNull(scryFallSet);
         Assert.assertEquals(scryFallSet.getCode(), "mp2");
     }
 
     @Test
     public void getByIdTest() {
-        ScryFallSet scryFallSet = apiService.get(BY_ID, ScryFallSet.class, "2ec77b94-6d47-4891-a480-5d0b4e5c9372").getBody();
+        ScryFallSet scryFallSet = apiService.get(BY_ID, ScryFallSet.class, "2ec77b94-6d47-4891-a480-5d0b4e5c9372");
         Assert.assertNotNull(scryFallSet);
         Assert.assertEquals(scryFallSet.getCode(), "uma");
     }
