@@ -3,7 +3,7 @@ package com.gantz.service.api.scryfallapi.service;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
-import static com.gantz.service.api.scryfallapi.service.ScrFallConstants.CatalogApi.*;
+import static com.gantz.service.api.scryfallapi.service.ScryFallConstants.CatalogApi.*;
 
 @Service
 @Log4j2

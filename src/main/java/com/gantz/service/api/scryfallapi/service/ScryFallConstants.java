@@ -1,6 +1,6 @@
 package com.gantz.service.api.scryfallapi.service;
 
-public class ScrFallConstants {
+public class ScryFallConstants {
 
     public final static String API_URI = "https://api.scryfall.com";
 

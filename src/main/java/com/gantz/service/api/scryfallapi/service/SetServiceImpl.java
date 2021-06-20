@@ -4,7 +4,7 @@ import com.gantz.service.api.scryfallapi.domain.ScryFallSet;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
-import static com.gantz.service.api.scryfallapi.service.ScrFallConstants.SetApi.*;
+import static com.gantz.service.api.scryfallapi.service.ScryFallConstants.SetApi.*;
 
 @Service
 @Log4j2

@@ -16,7 +16,7 @@ public class ScryFallApiService {
     }
 
     public <T> ResponseEntity<T> get(String uri, Class<T> responseClass) {
-        return restTemplate.getForEntity(ScrFallConstants.API_URI + uri, responseClass);
+        return restTemplate.getForEntity(ScryFallConstants.API_URI + uri, responseClass);
     }
 
     public <T> ResponseEntity<T> get(String uri, Class<T> responseClass, Object... variables) {
@@ -24,7 +24,7 @@ public class ScryFallApiService {
         headers.set(HttpHeaders.ACCEPT, MediaType.APPLICATION_JSON_VALUE);
         HttpEntity entity = new HttpEntity(headers);
 
-        return restTemplate.exchange(ScrFallConstants.API_URI + uri, HttpMethod.GET, entity, responseClass, variables);
+        return restTemplate.exchange(ScryFallConstants.API_URI + uri, HttpMethod.GET, entity, responseClass, variables);
     }
 
 }

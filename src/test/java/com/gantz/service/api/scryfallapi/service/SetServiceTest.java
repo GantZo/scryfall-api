@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static com.gantz.service.api.scryfallapi.service.ScrFallConstants.SetApi.*;
-import static com.gantz.service.api.scryfallapi.service.ScrFallConstants.SetApi.BY_ID;
+import static com.gantz.service.api.scryfallapi.service.ScryFallConstants.SetApi.*;
+import static com.gantz.service.api.scryfallapi.service.ScryFallConstants.SetApi.BY_ID;
 
 @SpringBootTest
 public class SetServiceTest {
