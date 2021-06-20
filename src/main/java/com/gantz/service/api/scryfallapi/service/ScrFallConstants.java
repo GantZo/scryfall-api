@@ -31,4 +31,11 @@ public class ScrFallConstants {
         public final static String BY_ID = "/cards/{id}/rulings";
     }
 
+    public static class SetApi {
+        public final static String SETS = "/sets";
+        public final static String BY_CODE = "/sets/{code}";
+        public final static String BY_TCGPLAYER_ID = "/sets/tcgplayer/{id}";
+        public final static String BY_ID = "/sets/{id}";
+    }
+
 }
