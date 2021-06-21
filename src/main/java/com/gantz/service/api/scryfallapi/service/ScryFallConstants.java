@@ -43,4 +43,19 @@ public class ScryFallConstants {
         public final static String PARSE_MANA = "/symbology/parse-mana?cost={cost}";
     }
 
+    public static class CardApi {
+        public final static String SEARCH = "/cards/search";
+        public final static String NAMED = "/cards/named";
+        public final static String AUTOCOMPLETE = "/cards/autocomplete";
+        public final static String RANDOM = "/cards/random";
+        public final static String COLLECTION = "/cards/collection";
+        public final static String BY_CODE_NUMBER = "/cards/{code}/{number}/{lang}";
+        public final static String BY_MULTIVERSE_ID = "/cards/multiverse/{id}";
+        public final static String BY_MTGO_ID = "/cards/mtgo/{id}";
+        public final static String BY_ARENA_ID = "/cards/arena/{id}";
+        public final static String BY_TCGPLAYER_ID = "/cards/tcgplayer/{id}";
+        public final static String BY_CARDMARKET_ID = "/cards/cardmarket/{id}";
+        public final static String BY_ID = "/cards/{id}";
+    }
+
 }
