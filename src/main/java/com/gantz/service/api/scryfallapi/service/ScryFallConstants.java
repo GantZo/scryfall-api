@@ -44,9 +44,9 @@ public class ScryFallConstants {
     }
 
     public static class CardApi {
-        public final static String SEARCH = "/cards/search";
-        public final static String NAMED = "/cards/named";
-        public final static String AUTOCOMPLETE = "/cards/autocomplete";
+        public final static String SEARCH = "/cards/search?q={query}";
+        public final static String NAMED = "/cards/named?fuzzy={fuzzy}";
+        public final static String AUTOCOMPLETE = "/cards/autocomplete?q={query}";
         public final static String RANDOM = "/cards/random";
         public final static String COLLECTION = "/cards/collection";
         public final static String BY_CODE_NUMBER = "/cards/{code}/{number}/{lang}";
