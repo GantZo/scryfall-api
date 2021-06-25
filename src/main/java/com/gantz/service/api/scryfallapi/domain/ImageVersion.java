@@ -26,6 +26,10 @@ public enum ImageVersion {
         this.type = type;
     }
 
+    public static ImageVersion getDefault() {
+        return LARGE;
+    }
+
     public static ImageVersion valueByType(String type) {
         return BY_TYPE.get(type);
     }

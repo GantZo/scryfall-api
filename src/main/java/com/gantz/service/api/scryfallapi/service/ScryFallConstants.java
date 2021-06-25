@@ -35,7 +35,7 @@ public class ScryFallConstants {
         public final static String SETS = "/sets";
         public final static String BY_CODE = "/sets/{code}";
         public final static String BY_TCGPLAYER_ID = "/sets/tcgplayer/{id}";
-        public final static String BY_ID = "/sets/{id}";
+        public final static String BY_ID = "/sets/{id}?format={format}&pretty={pretty}";
     }
 
     public static class CardSymbolApi {
